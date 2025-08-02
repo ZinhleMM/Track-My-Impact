@@ -12,7 +12,7 @@ References:
 - "Introduction to Convolution Neural Network - GeeksforGeeks."
 - "Epoch in Machine Learning - GeeksforGeeks."
 
-Author: Track My Impact Project
+Author: Zinhle Maurice-Mopp (210125870)
 Date: 2025-08-02
 """
 
