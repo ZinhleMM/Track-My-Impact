@@ -10,3 +10,4 @@ python scripts/split_dataset.py --input dataset/images --output dataset/split
 
 python waste_classifier/train_waste_classifier.py --data-dir dataset/split --epochs 50
 
+python waste_classifier/test_classifier_app.py --test-image path/to/image.jpg

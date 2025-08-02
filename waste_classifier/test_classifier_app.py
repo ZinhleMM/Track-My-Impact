@@ -14,6 +14,17 @@ References:
 Author: Zinhle Maurice-Mopp (210125870)
 Date: 2025-08-02
 """
+"""
+Run with:
+
+Single image: python waste_classifier/test_classifier_app.py --test-image dataset/images/metal/aluminum_food_cans/real_world/Image_9.png
+python waste_classifier/test_classifier_app.py --test-image dataset/images/paper/newspaper/default/Image_14.png
+python waste_classifier/test_classifier_app.py --test-image dataset/images/organic_waste/tea_bags/real_world/Image_37.png
+Batch testing: python waste_classifier/test_classifier_app.py --batch-size 10
+Custom weight: python waste_classifier/test_classifier_app.py --weight 0.5
+Batch directory: python waste_classifier/test_classifier_app.py --test-dir dataset/split/test?
+"""
+
 
 import os
 import json

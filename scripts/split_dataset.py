@@ -63,7 +63,7 @@ def count_images_per_class(dataset_path):
         
         if image_files:
             # Extract class name from directory structure
-            # Assumes structure: dataset/images/category/subcategory/[real_world|default]/
+            # Uses file structure: dataset/images/category/subcategory/[real_world|default]/
             path_parts = Path(root).parts
             if 'images' in path_parts:
                 images_idx = path_parts.index('images')
