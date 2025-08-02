@@ -5,7 +5,7 @@ split_dataset.py
 Dataset splitting script for waste classification project.
 
 This script splits the waste image dataset into training, validation, and test sets
-following standard machine learning practices. Uses stratified sampling to ensure
+following standard machine learning practices. Additionally, it makes use of stratified sampling to ensure
 balanced class distribution across splits.
 
 References:
@@ -17,7 +17,17 @@ Author: Zinhle Maurice-Mopp (210125870)
 Date: 2025-08-02
 """
 
-# Run with: python scripts/split_dataset.py
+# Run with: python scripts/split_dataset.py --input dataset/images --output dataset/split
+
+"""
+The command python scripts/split_dataset.py --input dataset/images --output dataset/split is used to organise the raw images 
+from dataset/images into distinct training, validation, and test sets within dataset/split. 
+This separation is for ensuring the model is trained on one set of data and evaluated on unseen data, 
+thus preventing overfitting and providing an accurate measure of its real-world performance. 
+
+This aligns with standard practices for preparing datasets for supervised learning, 
+as detailed in Chollet's Deep Learning with Python.
+"""
 
 import os
 import shutil

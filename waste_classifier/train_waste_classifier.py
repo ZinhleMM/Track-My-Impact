@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """
+train_waste_classifier.py
+
 Waste Classification CNN Training Script
 
 This script trains a convolutional neural network for waste classification using
@@ -15,7 +17,15 @@ References:
 Author: Zinhle Maurice-Mopp (210125870)
 Date: 2025-08-02
 """
+# Run with: python waste_classifier/train_waste_classifier.py --data-dir dataset/split --epochs 50
 
+"""
+The choice of 50 epochs is a practical starting point that gives the model enough time to learn, 
+while the early stopping callback prevents overfitting by halting training when validation loss 
+stops improving. 
+This approach follows best practices for efficient and effective model training as described in 
+Chollet, Deep Learning with Python (see Chapter 7, “Working with Keras”) [Deep Learning with Python.pdf].
+"""
 import os
 import json
 import numpy as np
@@ -193,7 +203,7 @@ def create_cnn_model(num_classes, img_size=(224, 224), use_transfer_learning=Tru
     model.compile(
         optimizer='adam',
         loss='categorical_crossentropy',
-        metrics=['accuracy', 'top_3_accuracy']  # Track top-3 accuracy for multi-class
+        metrics=['accuracy']  # Use standard accuracy metric
     )
     
     return model

@@ -1,0 +1,25 @@
+Chollet, François. Deep Learning with Python. 2nd ed., Manning Publications, 2021.
+
+"Convolutional Neural Network (CNN) in Machine Learning." GeeksforGeeks, 2023, www.geeksforgeeks.org/convolutional-neural-network-cnn/. Accessed 2 Aug. 2025.
+
+"Introduction to Convolution Neural Network." GeeksforGeeks, 2023, www.geeksforgeeks.org/introduction-to-convolutions-using-python/. Accessed 2 Aug. 2025.
+
+"Getting Started with Classification." GeeksforGeeks, 2023, www.geeksforgeeks.org/getting-started-with-classification/. Accessed 2 Aug. 2025.
+
+"Introduction to Machine Learning." GeeksforGeeks, 2023, www.geeksforgeeks.org/introduction-to-machine-learning/. Accessed 2 Aug. 2025.
+
+"What is Machine Learning Pipeline?" GeeksforGeeks, 2023, www.geeksforgeeks.org/what-is-machine-learning-pipeline/. Accessed 2 Aug. 2025.
+
+"Epoch in Machine Learning." GeeksforGeeks, 2023, www.geeksforgeeks.org/epoch-in-machine-learning/. Accessed 2 Aug. 2025.
+
+"Loss Functions in Machine Learning Explained." DataCamp, 2023, www.datacamp.com/tutorial/loss-functions-machine-learning. Accessed 2 Aug. 2025.
+
+United States Environmental Protection Agency. WARM Model. Version 14, 2022.
+
+National Cleaner Production Centre South Africa. Synergy Carbon Calculator – Public, 2021.
+
+Ritchie, Hannah, and Max Roser. "CO₂ and Greenhouse Gas Emissions Dataset. South Africa." Our World in Data, 2022, ourworldindata.org/co2-and-greenhouse-gas-emissions. Accessed 2 Aug. 2025.
+
+Ellen MacArthur Foundation. Circular Economy Reports, 2021.
+
+WRAP. "Household Waste Recycling." WRAP UK, 2022, wrap.org.uk. Accessed 2 Aug. 2025.

@@ -1,0 +1,12 @@
+# create a new virtual environment
+python -m venv .venv
+
+# activate the virtual environment and install the packages
+source .venv/bin/activate && pip install -r requirements.txt
+
+ pip install -r requirements.txt
+
+python scripts/split_dataset.py --input dataset/images --output dataset/split
+
+python waste_classifier/train_waste_classifier.py --data-dir dataset/split --epochs 50
+
