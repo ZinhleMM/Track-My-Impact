@@ -1,0 +1,168 @@
+{
+    "_metadata": {
+        "description": "Emission factors for waste classification impact calculations",
+        "version": "1.0",
+        "created": "2025-08-02",
+        "units": {
+            "co2e_kg_per_kg": "kg CO2 equivalent per kg of waste material",
+            "water_litres_per_kg": "litres of water saved per kg of waste material",
+            "energy_kwh_per_kg": "kWh of energy saved per kg of waste material"
+        },
+        "sources": [
+            "U.S. Environmental Protection Agency. WARM Model. Version 14, 2022.",
+            "National Cleaner Production Centre South Africa. Synergy Carbon Calculator – Public, 2021.",
+            "Our World in Data. CO₂ and Greenhouse Gas Emissions Dataset. South Africa, 2022.",
+            "Ellen MacArthur Foundation. Circular Economy Reports, 2021.",
+            "WRAP UK. Household Waste Recycling, 2022."
+        ],
+        "calculation_methodology": "Factors represent avoided emissions through proper recycling vs landfill disposal. All calculations use life-cycle assessment principles comparing recycling pathway emissions against virgin material production and landfill disposal.",
+        "regional_context": "Factors adjusted for South African energy grid (0.95 kg CO2e/kWh) and waste management infrastructure"
+    },
+    "glass_glass_beverage_bottles": {
+        "co2e_kg_per_kg": 0.314,
+        "water_litres_per_kg": 12.5,
+        "energy_kwh_per_kg": 2.8,
+        "calculation_notes": "Based on EPA WARM Model data: 0.31 MTCO2E per short ton avoided through recycling vs landfill. Glass production requires silica sand melting at 1700°C, consuming 2.8 kWh/kg. Water factor from Ellen MacArthur Foundation data on glass manufacturing water requirements.",
+        "source_reference": "U.S. Environmental Protection Agency. WARM Model. Version 14, 2022."
+    },
+    "glass_glass_cosmetic_containers": {
+        "co2e_kg_per_kg": 0.314,
+        "water_litres_per_kg": 12.5,
+        "energy_kwh_per_kg": 2.8,
+        "calculation_notes": "Identical factors to beverage bottles - cosmetic containers use similar soda-lime glass composition and manufacturing processes requiring same energy input for melting and forming.",
+        "source_reference": "U.S. Environmental Protection Agency. WARM Model. Version 14, 2022."
+    },
+    "glass_glass_food_jars": {
+        "co2e_kg_per_kg": 0.314,
+        "water_litres_per_kg": 12.5,
+        "energy_kwh_per_kg": 2.8,
+        "calculation_notes": "Food jars typically use clear or amber soda-lime glass with identical environmental profile to beverage containers. Same furnace temperatures and energy requirements apply.",
+        "source_reference": "U.S. Environmental Protection Agency. WARM Model. Version 14, 2022."
+    },
+    "metal_aluminium_cans": {
+        "co2e_kg_per_kg": 8.94,
+        "water_litres_per_kg": 45.0,
+        "energy_kwh_per_kg": 14.2,
+        "calculation_notes": "EPA WARM Model: 8.1 MTCO2E per short ton avoided. Aluminium recycling saves 95% of energy vs primary production from bauxite ore. Primary smelting requires 14-15 kWh/kg via Hall-Héroult process. Water factor includes bauxite mining and alumina refining processes.",
+        "source_reference": "U.S. Environmental Protection Agency. WARM Model. Version 14, 2022."
+    },
+    "metal_aluminium_food_cans": {
+        "co2e_kg_per_kg": 8.94,
+        "water_litres_per_kg": 45.0,
+        "energy_kwh_per_kg": 14.2,
+        "calculation_notes": "Food cans use 3004 or 5182 aluminium alloys with identical recycling benefits to beverage cans. Same Hall-Héroult smelting process avoided through recycling.",
+        "source_reference": "U.S. Environmental Protection Agency. WARM Model. Version 14, 2022."
+    },
+    "metal_steel_cans": {
+        "co2e_kg_per_kg": 1.89,
+        "water_litres_per_kg": 25.0,
+        "energy_kwh_per_kg": 6.5,
+        "calculation_notes": "EPA WARM Model: 1.71 MTCO2E per short ton avoided. Steel recycling saves ~74% of energy vs primary production from iron ore in blast furnaces. Avoids coking coal combustion and iron ore reduction processes.",
+        "source_reference": "U.S. Environmental Protection Agency. WARM Model. Version 14, 2022."
+    },
+    "paper_cardboard": {
+        "co2e_kg_per_kg": 0.42,
+        "water_litres_per_kg": 15.0,
+        "energy_kwh_per_kg": 2.1,
+        "calculation_notes": "EPA WARM Model: 0.38 MTCO2E per short ton avoided. Cardboard recycling avoids deforestation (carbon sequestration loss) and reduces methane emissions from anaerobic landfill decomposition. Water factor from pulp and paper manufacturing requirements.",
+        "source_reference": "U.S. Environmental Protection Agency. WARM Model. Version 14, 2022."
+    },
+    "paper_magazines": {
+        "co2e_kg_per_kg": 0.42,
+        "water_litres_per_kg": 15.0,
+        "energy_kwh_per_kg": 2.1,
+        "calculation_notes": "Magazines use coated paper stock with similar recycling benefits to cardboard. Coating removal in de-inking process has minimal energy penalty compared to avoided virgin pulp production.",
+        "source_reference": "U.S. Environmental Protection Agency. WARM Model. Version 14, 2022."
+    },
+    "paper_newspaper": {
+        "co2e_kg_per_kg": 0.42,
+        "water_litres_per_kg": 15.0,
+        "energy_kwh_per_kg": 2.1,
+        "calculation_notes": "Newsprint has high recycled content potential (up to 85%) and avoids virgin wood pulp production through mechanical pulping processes. Lower grade paper but same emission avoidance factors apply.",
+        "source_reference": "U.S. Environmental Protection Agency. WARM Model. Version 14, 2022."
+    },
+    "paper_office_paper": {
+        "co2e_kg_per_kg": 0.42,
+        "water_litres_per_kg": 15.0,
+        "energy_kwh_per_kg": 2.1,
+        "calculation_notes": "Office paper typically higher brightness grade requiring more chemical pulping, but recycling provides same emission avoidance benefits. De-inking process removes toner and ink contaminants.",
+        "source_reference": "U.S. Environmental Protection Agency. WARM Model. Version 14, 2022."
+    },
+    "plastic_plastic_bottles": {
+        "co2e_kg_per_kg": 1.50,
+        "water_litres_per_kg": 22.0,
+        "energy_kwh_per_kg": 3.8,
+        "calculation_notes": "EPA WARM Model: 1.36 MTCO2E per short ton avoided. PET bottles (most common) have established mechanical recycling infrastructure. Factor includes avoided virgin resin production from petroleum feedstock via polymerisation processes.",
+        "source_reference": "U.S. Environmental Protection Agency. WARM Model. Version 14, 2022."
+    },
+    "plastic_plastic_containers": {
+        "co2e_kg_per_kg": 1.50,
+        "water_litres_per_kg": 22.0,
+        "energy_kwh_per_kg": 3.8,
+        "calculation_notes": "Mixed plastic containers - weighted average factor across HDPE (#2), PP (#5), and PET (#1) containers. All use similar petrochemical feedstock and polymerisation energy requirements.",
+        "source_reference": "U.S. Environmental Protection Agency. WARM Model. Version 14, 2022."
+    },
+    "plastic_plastic_cups": {
+        "co2e_kg_per_kg": 1.50,
+        "water_litres_per_kg": 22.0,
+        "energy_kwh_per_kg": 3.8,
+        "calculation_notes": "Plastic cups typically polystyrene (PS) or polypropylene (PP) with similar recycling benefits to other rigid plastics. Thermoforming process has minimal additional energy impact.",
+        "source_reference": "U.S. Environmental Protection Agency. WARM Model. Version 14, 2022."
+    },
+    "plastic_plastic_cutlery": {
+        "co2e_kg_per_kg": 1.50,
+        "water_litres_per_kg": 22.0,
+        "energy_kwh_per_kg": 3.8,
+        "calculation_notes": "Single-use plastic cutlery typically PS or PP with standard plastic recycling emission factors. Injection moulding manufacturing process avoided through recycling.",
+        "source_reference": "U.S. Environmental Protection Agency. WARM Model. Version 14, 2022."
+    },
+    "organic_food_waste": {
+        "co2e_kg_per_kg": 0.15,
+        "water_litres_per_kg": 0.0,
+        "energy_kwh_per_kg": 0.0,
+        "calculation_notes": "EPA WARM Model: 0.14 MTCO2E per short ton avoided. Primary benefit is avoided methane emissions from anaerobic landfill decomposition. Composting produces CO2 instead of CH4 (GWP = 25x CO2). Methane capture efficiency in SA landfills typically <50%.",
+        "source_reference": "U.S. Environmental Protection Agency. WARM Model. Version 14, 2022."
+    },
+    "organic_garden_waste": {
+        "co2e_kg_per_kg": 0.15,
+        "water_litres_per_kg": 0.0,
+        "energy_kwh_per_kg": 0.0,
+        "calculation_notes": "Garden waste (leaves, grass clippings) has similar methane generation potential to food waste when landfilled under anaerobic conditions. Composting provides same emission avoidance benefits.",
+        "source_reference": "U.S. Environmental Protection Agency. WARM Model. Version 14, 2022."
+    },
+    "electronic_batteries": {
+        "co2e_kg_per_kg": 5.2,
+        "water_litres_per_kg": 180.0,
+        "energy_kwh_per_kg": 8.5,
+        "calculation_notes": "High factor due to avoided mining of lithium (2.2 million L water per tonne Li), cobalt, and rare earth elements. Battery recycling recovers 95% of lithium, 95% of cobalt, and 99% of nickel through hydrometallurgical processes.",
+        "source_reference": "National Cleaner Production Centre South Africa. Synergy Carbon Calculator – Public, 2021."
+    },
+    "electronic_mobile_phones": {
+        "co2e_kg_per_kg": 12.5,
+        "water_litres_per_kg": 350.0,
+        "energy_kwh_per_kg": 15.8,
+        "calculation_notes": "Mobile phones contain 60+ elements including rare earth metals (neodymium, dysprosium, terbium). Recycling avoids environmentally destructive mining operations. Factor includes avoided semiconductor manufacturing (extremely energy-intensive clean room processes).",
+        "source_reference": "National Cleaner Production Centre South Africa. Synergy Carbon Calculator – Public, 2021."
+    },
+    "textile_clothing": {
+        "co2e_kg_per_kg": 3.2,
+        "water_litres_per_kg": 2700.0,
+        "energy_kwh_per_kg": 4.1,
+        "calculation_notes": "Textile recycling avoids water-intensive cotton production (2700L per cotton t-shirt) or energy-intensive synthetic fiber manufacturing from petroleum. Water factor dominates environmental impact - cotton production accounts for 2.6% of global water use.",
+        "source_reference": "Ellen MacArthur Foundation. Circular Economy Reports, 2021."
+    },
+    "mixed_contaminated": {
+        "co2e_kg_per_kg": 0.05,
+        "water_litres_per_kg": 0.0,
+        "energy_kwh_per_kg": 0.0,
+        "calculation_notes": "Contaminated materials have minimal recycling potential due to food residue, mixed material types, or chemical contamination. Small factor represents avoided landfill methane emissions only (waste diversion benefit).",
+        "source_reference": "WRAP UK. Household Waste Recycling, 2022."
+    },
+    "other_general_waste": {
+        "co2e_kg_per_kg": 0.02,
+        "water_litres_per_kg": 0.0,
+        "energy_kwh_per_kg": 0.0,
+        "calculation_notes": "General waste category with minimal environmental benefit. Represents basic landfill diversion impact only - small methane avoidance if diverted to waste-to-energy facility (5% of SA waste management).",
+        "source_reference": "Our World in Data. CO₂ and Greenhouse Gas Emissions Dataset. South Africa, 2022."
+    }
+}
