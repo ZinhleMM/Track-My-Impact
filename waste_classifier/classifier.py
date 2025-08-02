@@ -14,7 +14,12 @@ References:
 Author: Zinhle Maurice-Mopp (210125870)
 Date: 2025-08-02
 """
+"""
+Run with:
 
+python waste_classifier/classify.py --image dataset/images/plastic/plastic_trash_bags/real_world/Image_5.png --verbose
+python waste_classifier/classify.py --batch-dir dataset/split/test --output classifier_results.json
+"""
 import os
 import json
 import time
